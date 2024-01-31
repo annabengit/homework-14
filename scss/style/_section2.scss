@@ -1,0 +1,100 @@
+.s-2 {
+  max-width: 1700px;
+  @include myflex(flex, row, nowrap, space-evenly, flex-start);
+  @media (max-width: 795px) {
+    flex-direction: column;
+  }
+  .discover-box {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    justify-content: flex-start;
+    @media (max-width: 795px) {
+      width: 600px;
+      margin-bottom: 30px;
+      justify-content: space-around;
+    }
+    @media (max-width: 750px) {
+      width: 550px;
+    }
+    .discover-name {
+      color: #636060;
+      font-family: Helvetica;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .discover-title {
+      color: #010101;
+      font-family: Helvetica;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding-top: 10px;
+      cursor: pointer;
+    }
+    .discover-text {
+      color: #636060;
+      font-family: Helvetica;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding-top: 30px;
+    }
+  }
+  .boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-bottom: 80px;
+    @media (max-width: 795px) {
+      flex-direction: column;
+      width: 600px;
+      align-items: center;
+    }
+    @media (max-width: 750px) {
+      width: 550px;
+    }
+    .box {
+      display: flex;
+      flex-direction: column;
+      width: 335px;
+      margin-left: 30px;
+      margin-bottom: 50px;
+      cursor: pointer;
+      @media (max-width: 795px) {
+        margin-bottom: 30px;
+        width: 600px;
+        justify-content: space-around;
+        margin-left: 0;
+        margin-bottom: 50px;
+      }
+    }
+
+    .boxtitle {
+      color: #343232;
+      font-family: Helvetica;
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding-top: 25px;
+      cursor: pointer;
+    }
+
+    .boxtext {
+      color: #636060;
+      font-family: Helvetica;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding-top: 10px;
+    }
+  }
+}
