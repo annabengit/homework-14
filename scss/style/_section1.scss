@@ -10,9 +10,20 @@
     margin-bottom: 25px;
     max-width: 1700px;
     @media (max-width: 795px) {
+      background-size: 100% 100%;
       background-size: cover;
       background-position: center;
       min-height: 400px;
+      max-width: 795px;
+    }
+    @media (max-width: 700px) {
+      max-width: 700px;
+      min-height: 500px;
+      margin-right: 0;
+      padding-right: 0;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: 50% 50%;
     }
   }
   .discovergreece {
